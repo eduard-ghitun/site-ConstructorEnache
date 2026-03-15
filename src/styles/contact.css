@@ -28,11 +28,12 @@
 
 .contact-card {
   padding: 1.25rem;
+  display: grid;
+  gap: 0.35rem;
 }
 
 .contact-card span {
   display: block;
-  margin-bottom: 0.6rem;
   color: var(--accent-strong);
   font-size: 0.85rem;
   font-weight: 800;
@@ -48,6 +49,17 @@
   word-break: break-word;
 }
 
+.contact-card__value {
+  margin: 0;
+}
+
+.contact-card__meta {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 .contact-form {
   padding: 1.5rem;
 }
@@ -58,7 +70,42 @@
   border-radius: 0 1rem 1rem 0;
   background: rgba(205, 161, 90, 0.08);
   color: var(--text-primary);
+}
+
+.contact-note strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-strong);
+}
+
+.contact-info-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.contact-info-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--text-primary);
   font-weight: 600;
+  line-height: 1.6;
+}
+
+.contact-info-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--accent);
 }
 
 .form-row {

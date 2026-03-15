@@ -82,27 +82,33 @@ Mesaj: ${formData.message.trim()}`;
           />
 
           <div className="contact-cards">
-            <article className="contact-card">
-              <span>Telefon</span>
-              <a href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}>{contactDetails.phone}</a>
-            </article>
-            <article className="contact-card">
-              <span>Email</span>
-              <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
-            </article>
-            <article className="contact-card">
-              <span>Facebook</span>
-              <a href={contactDetails.facebook.url} target="_blank" rel="noreferrer">
-                {contactDetails.facebook.label}
-              </a>
-            </article>
-            <article className="contact-card">
-              <span>Disponibilitate</span>
-              <p>{contactDetails.schedule}</p>
-            </article>
+            {contactDetails.cards.map((card) => (
+              <article key={card.title} className="contact-card">
+                <span>{card.title}</span>
+                {card.href ? (
+                  <a
+                    href={card.href}
+                    target={card.external ? '_blank' : undefined}
+                    rel={card.external ? 'noreferrer' : undefined}
+                  >
+                    {card.value}
+                  </a>
+                ) : (
+                  <p className="contact-card__value">{card.value}</p>
+                )}
+                <p className="contact-card__meta">{card.helper}</p>
+              </article>
+            ))}
           </div>
 
-          <p className="contact-note">{contactDetails.location}</p>
+          <div className="contact-note">
+            <strong>Informatii utile</strong>
+            <ul className="contact-info-list">
+              {contactDetails.infoItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <form className="contact-form premium-card" noValidate onSubmit={handleSubmit}>
