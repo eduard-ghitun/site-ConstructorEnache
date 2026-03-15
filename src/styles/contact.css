@@ -1,0 +1,125 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-card,
+.contact-form {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(14, 19, 27, 0.88);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-card {
+  padding: 1.25rem;
+}
+
+.contact-card span {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: var(--accent-strong);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-card a,
+.contact-card p {
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.contact-form {
+  padding: 1.5rem;
+}
+
+.contact-note {
+  padding: 1rem 1.15rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 1rem 1rem 0;
+  background: rgba(205, 161, 90, 0.08);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-primary);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: rgba(205, 161, 90, 0.52);
+  box-shadow: 0 0 0 4px rgba(205, 161, 90, 0.1);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.form-field small {
+  color: #ba4a32;
+}
+
+.form-success {
+  margin-top: 1rem;
+  color: #2a6d42;
+  font-weight: 600;
+}
+
+@media (max-width: 920px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-cards,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

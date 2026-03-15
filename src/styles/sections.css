@@ -1,0 +1,445 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.about-card {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.about-checklist,
+.about-spotlight,
+.about-experience {
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(16, 21, 29, 0.84);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-checklist {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-checklist__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.check-bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.about-spotlight span {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: var(--accent-strong);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about-spotlight h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+
+.about-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+}
+
+.about-metric-card {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.about-metric-card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--accent-strong);
+  font-size: 1.7rem;
+}
+
+.about-metric-card span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.about-experience {
+  background:
+    linear-gradient(135deg, rgba(17, 19, 22, 0.98), rgba(30, 34, 39, 0.96)),
+    rgba(17, 19, 22, 0.96);
+  color: var(--text-inverse);
+  box-shadow: var(--shadow-strong);
+}
+
+.about-experience span {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  color: #f2b258;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-experience h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+}
+
+.about-experience p {
+  color: rgba(245, 242, 236, 0.78);
+}
+
+.service-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.service-category-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  padding: 1.9rem 1.75rem 1.8rem;
+  border-radius: 1.85rem;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.service-category-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(205, 161, 90, 0.2);
+  box-shadow:
+    0 22px 42px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.service-category-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.service-category-card__icon {
+  margin-bottom: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+}
+
+.service-category-card h3,
+.execution-card h3,
+.delivery-card h3,
+.benefit-card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.34rem;
+}
+
+.service-category-card__body {
+  margin-bottom: 1.35rem;
+}
+
+.service-category-card__body p {
+  max-width: 30ch;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.service-accent {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 0;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(205, 161, 90, 0.16);
+  background: rgba(205, 161, 90, 0.08);
+  color: var(--accent-strong);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.service-list {
+  display: grid;
+  gap: 0.78rem;
+  margin-top: auto;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.service-list li::before {
+  content: '';
+  position: absolute;
+  top: 0.52rem;
+  left: 0;
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 12px rgba(205, 161, 90, 0.2);
+}
+
+.service-list__more {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.service-list__more::before {
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: none;
+}
+
+.execution-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.execution-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-height: 100%;
+  padding: 1.55rem;
+  border-radius: var(--radius-md);
+  border-radius: var(--radius-md);
+}
+
+.execution-card .icon-chip,
+.delivery-card .icon-chip {
+  margin-bottom: 0;
+}
+
+.execution-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: auto;
+}
+
+.execution-tags span {
+  display: inline-flex;
+  padding: 0.45rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.delivery-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-height: 100%;
+  padding: 1.6rem;
+  border-radius: var(--radius-md);
+}
+
+.delivery-stage {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 0.2rem;
+  color: var(--accent-strong);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.service-card {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(216, 138, 40, 0.25);
+  box-shadow: 0 20px 38px rgba(17, 19, 22, 0.1);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1.55rem;
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(14, 19, 27, 0.82);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+}
+
+.stats-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  padding: 1.7rem 1.4rem;
+  border-radius: 1.75rem;
+  border: 1px solid rgba(205, 161, 90, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    rgba(15, 20, 28, 0.96);
+  color: var(--text-inverse);
+  text-align: center;
+  box-shadow: var(--shadow-strong);
+}
+
+.stat-card strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #f2b258;
+}
+
+.stat-card span {
+  color: rgba(245, 242, 236, 0.72);
+  font-size: 0.98rem;
+}
+
+.final-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2.4rem;
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top right, rgba(205, 161, 90, 0.12), transparent 24%),
+    linear-gradient(135deg, rgba(12, 17, 24, 0.98), rgba(20, 26, 36, 0.96)),
+    rgba(17, 19, 22, 0.96);
+  border: 1px solid rgba(205, 161, 90, 0.14);
+  box-shadow: var(--shadow-strong);
+}
+
+.final-cta h2 {
+  max-width: 15ch;
+  margin-bottom: 0.8rem;
+  color: var(--text-inverse);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.final-cta p {
+  max-width: 36rem;
+  color: rgba(244, 239, 231, 0.72);
+}
+
+@media (max-width: 1080px) {
+  .service-category-grid,
+  .execution-grid,
+  .delivery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .about-grid,
+  .benefits-grid,
+  .stats-wrap,
+  .execution-grid,
+  .delivery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .final-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  .service-category-grid,
+  .benefits-grid,
+  .stats-wrap,
+  .about-grid,
+  .execution-grid,
+  .delivery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .final-cta {
+    padding: 1.6rem;
+  }
+
+  .final-cta .button {
+    width: 100%;
+  }
+
+  .service-category-card {
+    padding: 1.55rem;
+  }
+
+  .service-category-card__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-metrics {
+    grid-template-columns: 1fr;
+  }
+}

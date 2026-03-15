@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#0C1118"/>
+  <rect x="56" y="56" width="1088" height="788" rx="36" fill="url(#paint0_linear)" stroke="rgba(205,161,90,0.28)" stroke-width="2"/>
+  <rect x="112" y="112" width="976" height="676" rx="28" fill="#111823" stroke="rgba(255,255,255,0.08)" stroke-width="2" stroke-dasharray="12 12"/>
+  <path d="M351 586L490.532 442.847C503.755 429.279 525.51 428.819 539.295 441.821L648.84 545.151C662.194 557.747 683.057 557.954 696.657 545.626L751.675 495.765C766.47 482.357 789.362 483.297 803.012 497.867L913 615" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="417" cy="320" r="54" stroke="#CDA15A" stroke-width="18"/>
+  <path d="M602 223H845" stroke="#EDE7DD" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+  <path d="M602 273H760" stroke="#A9B0BD" stroke-width="12" stroke-linecap="round"/>
+  <path d="M602 329H883" stroke="#A9B0BD" stroke-width="12" stroke-linecap="round"/>
+  <path d="M602 385H814" stroke="#A9B0BD" stroke-width="12" stroke-linecap="round"/>
+  <text x="600" y="670" fill="#EDE7DD" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Adauga fotografia proiectului</text>
+  <text x="600" y="726" fill="#A9B0BD" font-family="Arial, Helvetica, sans-serif" font-size="28">Slot pregatit pentru imagini reale din categoria Interior</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="111" y1="102" x2="1012" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131B27"/>
+      <stop offset="1" stop-color="#0B1017"/>
+    </linearGradient>
+  </defs>
+</svg>

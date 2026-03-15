@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#0C1118"/>
+  <rect x="54" y="54" width="1092" height="792" rx="38" fill="url(#paint0_linear)" stroke="#CDA15A" stroke-opacity="0.24" stroke-width="2"/>
+  <rect x="118" y="126" width="964" height="628" rx="28" fill="#111823" stroke="white" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="14 14"/>
+  <path d="M250 622L450 422L603 532L760 376L950 572" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M344 504V396C344 382.745 354.745 372 368 372H524C537.255 372 548 382.745 548 396V504" stroke="#EDE7DD" stroke-width="16" stroke-linecap="round"/>
+  <path d="M408 504V436H484V504" stroke="#EDE7DD" stroke-width="16" stroke-linecap="round"/>
+  <path d="M716 504V430C716 416.745 726.745 406 740 406H849C862.255 406 873 416.745 873 430V504" stroke="#EDE7DD" stroke-width="16" stroke-linecap="round"/>
+  <path d="M344 372L446 296L548 372" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M716 406L794 344L873 406" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="685" fill="#EDE7DD" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" text-anchor="middle">Adauga fotografia proiectului exterior</text>
+  <text x="600" y="740" fill="#A9B0BD" font-family="Arial, Helvetica, sans-serif" font-size="28" text-anchor="middle">Slot pregatit pentru fatade, curti, garduri si amenajari exterioare</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="110" y1="102" x2="1034" y2="808" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131B27"/>
+      <stop offset="1" stop-color="#0B1017"/>
+    </linearGradient>
+  </defs>
+</svg>

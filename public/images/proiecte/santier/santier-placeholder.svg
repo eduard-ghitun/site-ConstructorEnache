@@ -1,0 +1,24 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#0C1118"/>
+  <rect x="56" y="56" width="1088" height="788" rx="36" fill="url(#paint0_linear)" stroke="#CDA15A" stroke-opacity="0.22" stroke-width="2"/>
+  <rect x="112" y="112" width="976" height="676" rx="28" fill="#111823" stroke="white" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="14 14"/>
+  <path d="M274 610H924" stroke="#EDE7DD" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+  <path d="M338 610V470L482 372V610" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M586 610V426L734 338V610" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M844 610V506L932 456V610" stroke="#CDA15A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M370 446H450" stroke="#EDE7DD" stroke-width="14" stroke-linecap="round"/>
+  <path d="M622 402H698" stroke="#EDE7DD" stroke-width="14" stroke-linecap="round"/>
+  <path d="M866 534H910" stroke="#EDE7DD" stroke-width="14" stroke-linecap="round"/>
+  <path d="M244 286H508" stroke="#A9B0BD" stroke-width="12" stroke-linecap="round"/>
+  <path d="M244 334H426" stroke="#A9B0BD" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="896" cy="226" r="58" stroke="#CDA15A" stroke-width="18"/>
+  <path d="M896 184V226L924 244" stroke="#EDE7DD" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="694" fill="#EDE7DD" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700" text-anchor="middle">Adauga fotografia de santier</text>
+  <text x="600" y="748" fill="#A9B0BD" font-family="Arial, Helvetica, sans-serif" font-size="28" text-anchor="middle">Slot pregatit pentru etape de executie, structura si lucrari in desfasurare</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="104" y1="92" x2="1032" y2="816" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#131B27"/>
+      <stop offset="1" stop-color="#0B1017"/>
+    </linearGradient>
+  </defs>
+</svg>

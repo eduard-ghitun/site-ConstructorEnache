@@ -1,0 +1,234 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  margin: 0;
+  padding: 1rem 0 0;
+  transition: padding 180ms ease;
+}
+
+.site-header.is-scrolled {
+  padding-top: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.45rem;
+  background: rgba(10, 14, 20, 0.7);
+  color: var(--text-inverse);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    border-radius 180ms ease;
+}
+
+.site-header.is-scrolled .navbar {
+  border-color: rgba(205, 161, 90, 0.16);
+  border-radius: 0 0 1.4rem 1.4rem;
+  background: rgba(10, 14, 20, 0.88);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 0;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 2.45rem;
+  height: 2.45rem;
+  color: var(--accent-strong);
+}
+
+.brand-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 8px 16px rgba(205, 161, 90, 0.16));
+}
+
+.brand-text {
+  display: grid;
+  gap: 0.08rem;
+}
+
+.brand-text strong {
+  color: var(--text-primary);
+  font-size: 1.02rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.brand-text small {
+  color: rgba(244, 239, 231, 0.56);
+  font-size: 0.73rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.nav-links a {
+  position: relative;
+  color: rgba(244, 239, 231, 0.76);
+  font-weight: 600;
+  transition: color 180ms ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transition: transform 180ms ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-inverse);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 220, 158, 0.2);
+  background: linear-gradient(135deg, #d8b06b, #bf8c42);
+  color: #0d1014;
+  font-weight: 700;
+  box-shadow:
+    0 12px 26px rgba(205, 161, 90, 0.16),
+    inset 0 1px 0 rgba(255, 245, 227, 0.24);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.28rem;
+  width: 2.9rem;
+  height: 2.9rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-inverse);
+}
+
+.menu-toggle span {
+  width: 1.2rem;
+  height: 2px;
+  margin: 0 auto;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.menu-toggle.is-open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.is-open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (max-width: 860px) {
+  .navbar {
+    padding-inline: 0.95rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    inset: 6.25rem 1rem auto;
+    display: grid;
+    gap: 0.85rem;
+    padding: 1.1rem;
+    border: 1px solid rgba(205, 161, 90, 0.12);
+    border-radius: 1.4rem;
+    background: rgba(10, 14, 20, 0.96);
+    box-shadow: var(--shadow-strong);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition:
+      opacity 180ms ease,
+      transform 180ms ease,
+      visibility 180ms ease;
+  }
+
+  .nav-links.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-icon {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.92rem;
+  }
+
+  .brand-text small {
+    display: none;
+  }
+}
