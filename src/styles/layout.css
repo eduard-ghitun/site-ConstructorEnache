@@ -174,3 +174,45 @@
     max-width: none;
   }
 }
+
+@media (max-width: 960px) {
+  .section {
+    padding: 6.4rem 0;
+  }
+
+  .section-heading h2 {
+    max-width: 16ch;
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4.8rem 0;
+  }
+
+  .section--tight {
+    padding: 3.8rem 0;
+  }
+
+  .section-heading {
+    margin-bottom: 1.9rem;
+  }
+
+  .section-eyebrow {
+    margin-bottom: 0.85rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.14em;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+    line-height: 1.04;
+  }
+
+  .section-heading p,
+  .section-paragraph {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}

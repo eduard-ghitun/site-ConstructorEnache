@@ -389,6 +389,15 @@
   .delivery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
 }
 
 @media (max-width: 900px) {
@@ -403,6 +412,14 @@
   .final-cta {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .service-category-grid {
+    gap: 1.2rem;
+  }
+
+  .service-category-card {
+    padding: 1.55rem;
   }
 }
 
@@ -420,6 +437,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
   .final-cta {
     padding: 1.6rem;
   }
@@ -433,13 +454,58 @@
   }
 
   .service-category-card__top {
-    flex-direction: column;
     align-items: flex-start;
+  }
+
+  .execution-card,
+  .delivery-card,
+  .benefit-card,
+  .about-checklist,
+  .about-spotlight,
+  .about-experience {
+    padding: 1.35rem;
+  }
+
+  .stat-card {
+    padding: 1.35rem 1.1rem;
+    border-radius: 1.3rem;
   }
 }
 
 @media (max-width: 560px) {
   .about-metrics {
     grid-template-columns: 1fr;
+  }
+
+  .service-category-card {
+    padding: 1.3rem;
+    border-radius: 1.35rem;
+  }
+
+  .service-category-card h3,
+  .execution-card h3,
+  .delivery-card h3,
+  .benefit-card h3 {
+    font-size: 1.18rem;
+  }
+
+  .service-category-card__body p,
+  .execution-card p,
+  .delivery-card p,
+  .benefit-card p {
+    font-size: 0.95rem;
+  }
+
+  .service-list li {
+    font-size: 0.92rem;
+  }
+
+  .final-cta {
+    gap: 1rem;
+    padding: 1.35rem;
+  }
+
+  .final-cta h2 {
+    font-size: clamp(1.7rem, 9vw, 2.3rem);
   }
 }

@@ -17,6 +17,10 @@ function Navbar({ links }) {
   }, [isOpen]);
 
   useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname, location.hash]);
+
+  useEffect(() => {
     function handleScroll() {
       setIsScrolled(window.scrollY > 24);
     }
@@ -69,6 +73,13 @@ function Navbar({ links }) {
         >
           {links.map((link) => renderLink(link))}
         </nav>
+
+        <button
+          type="button"
+          className={`nav-overlay mobile-only ${isOpen ? 'is-open' : ''}`}
+          aria-label="Inchide meniul"
+          onClick={() => setIsOpen(false)}
+        />
 
         <div className="nav-actions">
           <Link className="nav-cta desktop-only" to={contactLink}>

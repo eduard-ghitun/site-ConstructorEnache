@@ -16,6 +16,7 @@ html {
 
 body {
   min-width: 320px;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(205, 161, 90, 0.14), transparent 24%),
     radial-gradient(circle at top right, rgba(48, 66, 97, 0.14), transparent 22%),
@@ -49,6 +50,12 @@ button,
 input,
 textarea {
   font: inherit;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px;
 }
 
 button {
@@ -162,5 +169,13 @@ ul {
 
   .mobile-only {
     display: inline-flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .button {
+    width: 100%;
+    min-height: 3.3rem;
+    padding: 0.9rem 1.15rem;
   }
 }
