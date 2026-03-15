@@ -29,6 +29,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: translateZ(0);
 }
 
 .hero-video-overlay {
@@ -313,6 +314,10 @@
   .hero-stat-card {
     padding: 0.9rem;
   }
+
+  .hero-video {
+    object-position: center 42%;
+  }
 }
 
 @media (max-width: 560px) {
@@ -361,6 +366,10 @@
     background:
       linear-gradient(180deg, rgba(6, 9, 14, 0.88) 0%, rgba(7, 10, 15, 0.78) 34%, rgba(7, 10, 15, 0.9) 100%),
       rgba(5, 8, 13, 0.42);
+  }
+
+  .hero-video {
+    object-position: center 38%;
   }
 
   .hero-panel,

@@ -1,6 +1,64 @@
+import { useEffect, useRef } from 'react';
 import { heroContent } from '../data/siteContent';
 
 function HeroSection() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) {
+      return undefined;
+    }
+
+    let retryTimeoutId;
+
+    const playVideo = () => {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+
+      const playPromise = video.play();
+
+      if (playPromise?.catch) {
+        playPromise.catch(() => {
+          retryTimeoutId = window.setTimeout(() => {
+            video.play().catch(() => {});
+          }, 250);
+        });
+      }
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        playVideo();
+      }
+    };
+
+    const handleEnded = () => {
+      video.currentTime = 0;
+      playVideo();
+    };
+
+    playVideo();
+
+    video.addEventListener('loadeddata', playVideo);
+    video.addEventListener('canplay', playVideo);
+    video.addEventListener('ended', handleEnded);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      if (retryTimeoutId) {
+        window.clearTimeout(retryTimeoutId);
+      }
+
+      video.removeEventListener('loadeddata', playVideo);
+      video.removeEventListener('canplay', playVideo);
+      video.removeEventListener('ended', handleEnded);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <section
       id="acasa"
@@ -10,13 +68,17 @@ function HeroSection() {
       <div className="hero-video-wrapper" aria-hidden="true">
         <div className="hero-video-fallback" />
         <video
+          ref={videoRef}
           className="hero-video"
           autoPlay
           muted
+          defaultMuted
           loop
           playsInline
+          disablePictureInPicture
           preload="metadata"
           poster={heroContent.background}
+          aria-hidden="true"
         >
           <source src="/videos/hero-intro.mp4" type="video/mp4" />
         </video>
