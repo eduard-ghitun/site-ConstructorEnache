@@ -1,18 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { brandDetails, contactDetails } from '../data/siteContent';
 import BrandLogo from './BrandLogo';
 
 function Footer({ links }) {
+  const location = useLocation();
+  const routeLinks = [
+    { label: 'Despre', href: '/despre' },
+    { label: 'Servicii', href: '/servicii' },
+    { label: 'Proiecte', href: '/proiecte' },
+    { label: 'Contact', href: '/contact' },
+    { label: 'Suceava', href: '/suceava' },
+    { label: 'Botosani', href: '/botosani' },
+  ];
+  const sectionHref = (href) => (location.pathname === '/' ? href : `/${href}`);
+
   return (
     <footer className="site-footer pattern-bg architect-grid">
       <div className="container footer-grid">
         <div>
-          <a className="brand brand--footer" href="#acasa">
+          <Link className="brand brand--footer" to="/">
             <BrandLogo />
-          </a>
+          </Link>
           <p className="footer-copy">
-            Lucrari de constructii, instalatii si finisaje executate organizat, pentru clienti care
-            cauta un rezultat curat, serios si bine dus pana la capat.
+            Lucrari de constructii, instalatii si finisaje executate organizat pentru clienti din
+            Suceava si Botosani care cauta un rezultat curat, serios si bine dus pana la capat.
           </p>
         </div>
 
@@ -35,14 +46,25 @@ function Footer({ links }) {
         </div>
 
         <div>
-          <h3>Linkuri rapide</h3>
+          <h3>Linkuri utile</h3>
+          <ul className="footer-list">
+            {routeLinks.map((link) => (
+              <li key={link.href}>
+                <Link to={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3>Navigare rapida</h3>
           <ul className="footer-list">
             {links.map((link) => (
               <li key={link.href}>
                 {link.type === 'route' ? (
                   <Link to={link.href}>{link.label}</Link>
                 ) : (
-                  <a href={`/${link.href}`}>{link.label}</a>
+                  <a href={sectionHref(link.href)}>{link.label}</a>
                 )}
               </li>
             ))}

@@ -7,6 +7,12 @@ function Navbar({ links }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const routeFallbacks = {
+    '#acasa': '/',
+    '#despre': '/despre',
+    '#servicii': '/servicii',
+    '#contact': '/contact',
+  };
 
   useEffect(() => {
     document.body.classList.toggle('menu-open', isOpen);
@@ -51,13 +57,13 @@ function Navbar({ links }) {
     }
 
     return (
-      <Link key={link.href} to={`/${link.href}`} onClick={() => setIsOpen(false)}>
+      <Link key={link.href} to={routeFallbacks[link.href] ?? `/${link.href}`} onClick={() => setIsOpen(false)}>
         {link.label}
       </Link>
     );
   }
 
-  const contactLink = location.pathname === '/' ? '#contact' : '/#contact';
+  const contactLink = location.pathname === '/' ? '#contact' : '/contact';
 
   return (
     <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`}>

@@ -25,7 +25,7 @@ export const heroContent = {
   eyebrow: 'Constructii, finisaje si instalatii',
   title: 'Executam lucrari complete de constructii, renovari si amenajari',
   description:
-    'Punem la dispozitie peste 25 de ani de experienta acumulata in Italia si Romania si oferim consultanta gratuita pentru proiecte la rosu, la gri, la cheie sau pentru lucrari individuale de finisaje si instalatii.',
+    'Punem la dispozitie peste 25 de ani de experienta acumulata in Italia si Romania si oferim consultanta gratuita pentru proiecte la rosu, la gri, la cheie sau pentru lucrari individuale de finisaje si instalatii in Suceava si Botosani.',
   primaryCta: { label: 'Consultanta gratuita', href: '#contact' },
   secondaryCta: { label: 'Vezi serviciile', href: '#servicii' },
   trustPoints: [
@@ -55,7 +55,7 @@ export const aboutContent = {
   title: 'Peste 25 de ani de experienta in constructii, pusi in slujba unor lucrari executate corect si bine organizate.',
   paragraphs: [
     'Echipa noastra are peste 20 de ani de experienta acumulata in Italia, unde am lucrat in constructii rezidentiale si finisaje realizate la standarde ridicate, cu accent pe executie curata si detalii bine facute.',
-    'In ultimii 5 ani am adus aceasta experienta si in Romania, unde executam lucrari de structura, instalatii, finisaje interioare si exterioare pentru clienti care isi doresc seriozitate, consultanta gratuita si o echipa pe care se pot baza.',
+    'In ultimii 5 ani am adus aceasta experienta si in Romania, unde executam lucrari de structura, instalatii, finisaje interioare si exterioare pentru clienti din Suceava si Botosani care isi doresc seriozitate, consultanta gratuita si o echipa pe care se pot baza.',
   ],
   highlights: [
     'Peste 20 de ani de experienta in Italia si 5 ani de activitate in Romania',
@@ -321,7 +321,7 @@ export const finalCtaContent = {
   eyebrow: 'Consultanta gratuita',
   title: 'Discuta gratuit cu noi despre proiectul tau si afla ce varianta de executie ti se potriveste.',
   description:
-    'Fie ca vrei o casa la rosu, o lucrare la cheie sau doar o etapa de finisaje si instalatii, iti oferim consultanta gratuita si o directie clara de lucru.',
+    'Fie ca vrei o casa la rosu, o lucrare la cheie sau doar o etapa de finisaje si instalatii, iti oferim consultanta gratuita si o directie clara de lucru pentru proiecte din Suceava si Botosani.',
   buttonLabel: 'Discuta gratuit despre proiect',
 };
 
@@ -366,6 +366,7 @@ export const contactDetails = {
   ],
   infoItems: [
     'Consultanta gratuita pentru lucrari de constructii, renovari si amenajari.',
+    'Preluam proiecte locale din Suceava, Botosani si din localitati apropiate.',
     'Raspuns direct prin telefon, email sau mesaj pe Facebook.',
     'Discutii aplicate pe etape, materiale si organizarea lucrarii.',
   ],

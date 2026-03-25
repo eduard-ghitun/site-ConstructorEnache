@@ -12,8 +12,9 @@ function ProjectGalleryCard({ project, onOpen }) {
         <div className="project-card-image">
           <img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} - ${project.description}`}
             loading="lazy"
+            decoding="async"
             onError={(event) => {
               event.currentTarget.onerror = null;
               event.currentTarget.src = fallbackImage;

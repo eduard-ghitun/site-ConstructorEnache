@@ -118,9 +118,11 @@ Mesaj: ${formData.message.trim()}`;
               id="name"
               name="name"
               type="text"
+              autoComplete="name"
               placeholder="Numele tau"
               value={formData.name}
               onChange={handleChange}
+              aria-invalid={errors.name ? 'true' : 'false'}
             />
             {errors.name ? <small>{errors.name}</small> : null}
           </div>
@@ -131,9 +133,11 @@ Mesaj: ${formData.message.trim()}`;
               id="phone"
               name="phone"
               type="tel"
+              autoComplete="tel"
               placeholder="+40 7xx xxx xxx"
               value={formData.phone}
               onChange={handleChange}
+              aria-invalid={errors.phone ? 'true' : 'false'}
             />
             {errors.phone ? <small>{errors.phone}</small> : null}
           </div>
@@ -147,6 +151,7 @@ Mesaj: ${formData.message.trim()}`;
               placeholder="Descrie pe scurt lucrarea: de exemplu casa la rosu, instalatii, rigips, gresie, fatada sau pavaje."
               value={formData.message}
               onChange={handleChange}
+              aria-invalid={errors.message ? 'true' : 'false'}
             />
             {errors.message ? <small>{errors.message}</small> : null}
           </div>

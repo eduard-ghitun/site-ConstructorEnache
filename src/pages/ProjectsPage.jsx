@@ -37,6 +37,7 @@ function ProjectsPage() {
             <SectionHeader
               eyebrow="Portofoliu"
               title="Proiectele noastre"
+              headingLevel={1}
               description="Descopera o selectie de lucrari realizate de echipa noastra, organizate clar pe categorii pentru a evidentia etapele si rezultatele finale. Vei gasi imagini din proiecte de interior, lucrari exterioare si santiere aflate in executie, astfel incat sa poti vedea mai usor stilul nostru de lucru, atentia la detalii si modul in care ducem fiecare lucrare de la executie pana la finalizare."
             />
           </div>
@@ -83,6 +84,25 @@ function ProjectsPage() {
             ))}
           </div>
         </section>
+
+        <section className="projects-page__seo premium-card">
+          <div>
+            <h2>Lucrari documentate pentru clienti din Suceava si Botosani</h2>
+            <p>
+              Portofoliul este un sprijin util atat pentru incredere, cat si pentru SEO local: arata tipurile
+              de lucrari pe care le executam si sustine cautarile pentru constructii, finisaje si amenajari in
+              Suceava si Botosani.
+            </p>
+          </div>
+          <div className="projects-page__actions">
+            <Link className="button button--accent" to="/servicii">
+              Vezi serviciile
+            </Link>
+            <Link className="button button--ghost" to="/contact">
+              Solicita oferta
+            </Link>
+          </div>
+        </section>
       </div>
 
       {activeProject ? (
@@ -96,6 +116,7 @@ function ProjectsPage() {
               <img
                 src={activeProject.image}
                 alt={activeProject.title}
+                loading="eager"
                 onError={(event) => {
                   event.currentTarget.onerror = null;
                   event.currentTarget.src = activeProjectFallback;
@@ -103,6 +124,8 @@ function ProjectsPage() {
               />
             </div>
             <div className="lightbox__copy">
+              <h2>{activeProject.title}</h2>
+              <p>{activeProject.description}</p>
             </div>
           </div>
         </div>
