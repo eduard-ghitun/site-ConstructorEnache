@@ -1,6 +1,5 @@
 import AboutSection from '../components/AboutSection';
 import FinalCTA from '../components/FinalCTA';
-import LocalAreasSection from '../components/LocalAreasSection';
 import PageHero from '../components/PageHero';
 import StatsSection from '../components/StatsSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
@@ -41,10 +40,6 @@ function AboutPage() {
       <AboutSection />
       <StatsSection />
       <WhyChooseUsSection />
-      <LocalAreasSection
-        title="Serviciile noastre sunt pregatite pentru clienti din Suceava si Botosani care cauta o echipa serioasa."
-        description="Paginile locale ne ajuta sa raspundem mai bine cautarilor din fiecare oras, fara sa duplicam artificial continutul."
-      />
       <FinalCTA />
     </>
   );

@@ -5,7 +5,6 @@ import ExecutionHighlightsSection from '../components/ExecutionHighlightsSection
 import FaqSection from '../components/FaqSection';
 import FinalCTA from '../components/FinalCTA';
 import HeroSection from '../components/HeroSection';
-import LocalAreasSection from '../components/LocalAreasSection';
 import ServicesSection from '../components/ServicesSection';
 import StatsSection from '../components/StatsSection';
 import WhyChooseUsSection from '../components/WhyChooseUsSection';
@@ -20,7 +19,6 @@ function HomePage() {
       <ExecutionHighlightsSection />
       <DeliveryStagesSection />
       <WhyChooseUsSection />
-      <LocalAreasSection />
       <StatsSection />
       <FaqSection
         title="Intrebari frecvente despre serviciile noastre in Suceava si Botosani"

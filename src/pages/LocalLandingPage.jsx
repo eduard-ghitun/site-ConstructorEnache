@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import FaqSection from '../components/FaqSection';
-import LocalAreasSection from '../components/LocalAreasSection';
 import PageHero from '../components/PageHero';
 import SectionHeader from '../components/SectionHeader';
 import { localPagesContent } from '../data/sitePagesContent';
@@ -105,11 +104,6 @@ function LocalLandingPage({ cityKey }) {
         title={`Intrebari frecvente despre lucrari in ${page.city}`}
         description={`Raspunsuri utile pentru clientii care cauta servicii de constructii in ${page.city} sau in zone apropiate.`}
         items={page.faqs}
-      />
-
-      <LocalAreasSection
-        title="Optimizarea locala este construita pe pagini dedicate, nu pe texte duplicate."
-        description="Fiecare oras are propria pagina, propria meta descriere, propriul H1 si propriile blocuri de continut local."
       />
     </>
   );
