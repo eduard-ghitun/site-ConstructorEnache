@@ -217,7 +217,13 @@
 }
 
 .lightbox__copy {
-  display: none;
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.lightbox__copy h2 {
+  font-size: 1.5rem;
 }
 
 .projects-grid {

@@ -78,7 +78,7 @@ Mesaj: ${formData.message.trim()}`;
           <SectionHeader
             eyebrow="Contact"
             title="Spune-ne ce lucrare ai in plan si revenim cu o discutie clara, aplicata pe serviciile de care ai nevoie."
-            description="Oferim consultanta gratuita pentru lucrari de constructii, renovari si amenajari. Contacteaza-ne pentru a discuta proiectul tau si pentru a intelege mai clar etapele potrivite."
+            description="Oferim consultanta gratuita pentru lucrari de constructii, renovari si amenajari in Suceava, Botosani si in localitati apropiate. Contacteaza-ne pentru a discuta proiectul tau si pentru a intelege mai clar etapele potrivite."
           />
 
           <div className="contact-cards">

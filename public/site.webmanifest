@@ -1,0 +1,17 @@
+{
+  "name": "Deko Construct",
+  "short_name": "Deko Construct",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090c11",
+  "theme_color": "#090c11",
+  "lang": "ro-RO",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

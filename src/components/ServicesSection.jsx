@@ -9,7 +9,7 @@ function ServicesSection() {
         <SectionHeader
           eyebrow="Servicii"
           title="Serviciile sunt organizate clar, pe categorii reale de executie, ca sa vezi rapid ce putem prelua."
-          description="Am structurat oferta astfel incat sa fie usor de parcurs: constructii la rosu, finisaje, instalatii si lucrari premium, fie ca vrei executie completa, fie doar o etapa separata."
+          description="Am structurat oferta astfel incat sa fie usor de parcurs: constructii la rosu, finisaje, instalatii si lucrari premium, fie ca vrei executie completa, fie doar o etapa separata, pentru proiecte din Suceava si Botosani."
         />
 
         <div className="service-category-grid">

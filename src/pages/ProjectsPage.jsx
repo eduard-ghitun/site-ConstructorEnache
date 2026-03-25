@@ -36,7 +36,7 @@ function ProjectsPage() {
             </span>
             <SectionHeader
               eyebrow="Portofoliu"
-              title="Proiectele noastre"
+              title="Portofoliu de constructii si finisaje"
               headingLevel={1}
               description="Descopera o selectie de lucrari realizate de echipa noastra, organizate clar pe categorii pentru a evidentia etapele si rezultatele finale. Vei gasi imagini din proiecte de interior, lucrari exterioare si santiere aflate in executie, astfel incat sa poti vedea mai usor stilul nostru de lucru, atentia la detalii si modul in care ducem fiecare lucrare de la executie pana la finalizare."
             />

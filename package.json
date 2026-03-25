@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "seo:sync": "node scripts/seo-sync.mjs",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run seo:sync && vite build && npm run seo:sync",
     "preview": "vite preview"
   },
   "dependencies": {

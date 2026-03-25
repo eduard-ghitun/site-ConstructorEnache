@@ -1,5 +1,5 @@
-import { brandDetails, contactDetails, serviceCategories } from './siteContent';
-import { contactPageContent, homeFaqs, localPagesContent, servicesPageContent } from './sitePagesContent';
+import { brandDetails, contactDetails, serviceCategories } from './businessData.js';
+import { contactPageContent, homeFaqs, localPagesContent, servicesPageContent } from './sitePagesContent.js';
 
 export const SEO_SITE_URL = 'https://www.dekoconstruct.ro';
 export const SEO_DEFAULT_IMAGE = '/images/proiecte/cover-proiecte.jpg';
@@ -124,7 +124,7 @@ export const routeSeo = {
       'constructor case Suceava',
     ],
     type: 'website',
-    pageType: 'Service',
+    pageType: 'WebPage',
     breadcrumbName: 'Suceava',
     changefreq: 'weekly',
     priority: '0.9',
@@ -145,7 +145,7 @@ export const routeSeo = {
       'constructor case Botosani',
     ],
     type: 'website',
-    pageType: 'Service',
+    pageType: 'WebPage',
     breadcrumbName: 'Botosani',
     changefreq: 'weekly',
     priority: '0.9',
